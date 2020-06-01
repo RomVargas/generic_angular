@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Cliente } from '../models/cliente'
+import { Cliente } from '../models/cliente';
+//-- Observable convierte el response en un stream para poder hacer los metodos asincronos
+import { Observable, of } from 'rxjs';
+
+
 
 @Injectable()
 export class ClientesService{
@@ -8,8 +12,8 @@ export class ClientesService{
 
     clientes: Cliente[]
 
-    getClientes(): Cliente[]{
-        return this.clientes;
+    getClientes(): Observable<Cliente[]>{
+        return of(this.clientes);
 
     }
 
