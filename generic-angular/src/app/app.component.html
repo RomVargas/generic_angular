@@ -1,10 +1,11 @@
 
 <app-header-component></app-header-component>
 
-<app-clientes-component></app-clientes-component>
+<div class="container">
+    <app-clientes-component></app-clientes-component>
+
+    <!--Directiva de angular que le dice donde se administraran las rutas de la aplicacion-->
+    <router-outlet></router-outlet>
+</div>
 
 <app-footer-component></app-footer-component>
-
-
-<!--Directiva de angular que le dice donde se administraran las rutas de la aplicacion-->
-<router-outlet></router-outlet>
