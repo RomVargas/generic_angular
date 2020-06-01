@@ -5,7 +5,7 @@ import { ClientesComponent } from './clientes-component/clientes.component';
 
 //Se declarantodas las rutas de l aplicacion
 const routes: Routes = [
- //  {path:'',redirectTo:'/clientes', pathMatch:'full'},
+  {path:'',redirectTo:'/clientes', pathMatch:'full'},
   {path:'directivas', component: DirectivaComponent},
   {path:'clientes', component: ClientesComponent}
 ];
